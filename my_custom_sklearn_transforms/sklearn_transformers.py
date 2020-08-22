@@ -34,11 +34,11 @@ class TransformacaoCustomizada(BaseEstimator, TransformerMixin):
         array_humanas = data.loc[data.PERFIL == "HUMANAS"]
         array_muito_bom = data.loc[data.PERFIL == "MUITO_BOM"]
 
-        array_dificuldade2 = resample(array_dificuldade, n_samples=444)
-        array_exatas2 = resample(array_exatas, n_samples=444)
-        array_excelente2 = resample(array_excelente, n_samples=444)
-        array_humanas2 = resample(array_humanas, n_samples=444)
-        array_muito_bom2 = resample(array_muito_bom, n_samples=444)
+        array_dificuldade2 = resample(array_dificuldade, n_samples=671)
+        array_exatas2 = resample(array_exatas, n_samples=671)
+        array_excelente2 = resample(array_excelente, n_samples=671)
+        array_humanas2 = resample(array_humanas, n_samples=671)
+        array_muito_bom2 = resample(array_muito_bom, n_samples=671)
 
         frames = [array_dificuldade2, array_exatas2, array_excelente2, array_humanas2, array_muito_bom2]
         result = pd.concat(frames)
