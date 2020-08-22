@@ -18,7 +18,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
         return data.drop(labels=self.columns, axis='columns')
 
 class TransformacaoCustomizada(BaseEstimator, TransformerMixin):
-    def fit(self):
+    def fit(self, X, y=None):
         return self
     
     def transform(self, X):
