@@ -18,10 +18,13 @@ class DropColumns(BaseEstimator, TransformerMixin):
         return data.drop(labels=self.columns, axis='columns')
 
 class TransformacaoCustomizada(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        print('\n>>>>>>init()\n')
+
     def fit(self, X, y=None):
         return self
     
-    def transform(self, X):
+    def transform(self, X. y=None):
         # Primeiro realizamos a cópia do dataframe 'X' de entrada
         data = X.copy()
         
