@@ -24,8 +24,6 @@ class TransformacaoCustomizada(BaseEstimator, TransformerMixin):
     def transform(self, X):
         # Primeiro realizamos a cópia do dataframe 'X' de entrada
         data = X.copy()
-        # Removendo dados vazios
-        data = data.dropna()
         
         # Rebalanceando
         array_dificuldade = data.loc[data.PERFIL == "DIFICULDADE"]
