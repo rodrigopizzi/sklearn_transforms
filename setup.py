@@ -1,4 +1,6 @@
 from setuptools import setup
+from sklearn.utils import resample
+from sklearn.utils import shuffle
 
 
 setup(
