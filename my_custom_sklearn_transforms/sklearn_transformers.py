@@ -24,7 +24,7 @@ class TransformacaoCustomizada(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
         return self
     
-    def transform(self, X. y=None):
+    def transform(self, X, y=None):
         # Primeiro realizamos a cópia do dataframe 'X' de entrada
         data = X.copy()
         
