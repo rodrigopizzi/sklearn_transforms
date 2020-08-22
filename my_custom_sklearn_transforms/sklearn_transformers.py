@@ -17,7 +17,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
         # Retornamos um novo dataframe sem as colunas indesejadas
         return data.drop(labels=self.columns, axis='columns')
 
-class TransformacaoCustomizada:
+class TransformacaoCustomizada(BaseEstimator, TransformerMixin):
 
     def fit(self):
         return self
